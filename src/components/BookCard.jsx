@@ -54,11 +54,11 @@ const BookCard = ({ book }) => {
   };
 
   return (
-    <div className="bg-white shadow p-4 rounded w-full max-w-xs relative">
+    <div className="bg-containerBackground shadow p-4 rounded w-full max-w-xs relative">
       <Link to={`/book${book.key}`}>
         <img src={image} alt={book.title} className="w-full h-60 object-cover" />
         <h2 className="font-semibold mt-2">{book.title}</h2>
-        <p className="text-sm text-gray-600">{book.author_name?.[0]}</p>
+        <p className="text-sm text-secondaryText">{book.author_name?.[0]}</p>
       </Link>
       <button
         onClick={addToFavorites}

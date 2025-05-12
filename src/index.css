@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+  --primary: 194, 103, 0;            /* Burnt orange */
+  --secondary: 108, 122, 137;        /* Muted slate blue-gray */
+  --background: 249, 241, 228;       /* Warm parchment */
+  --containerBackground: 243, 232, 213; /* Soft paper tone */
+  --primaryText: 60, 50, 40;         /* Deep sepia brown */
+  --secondaryText: 120, 110, 100;    /* Soft taupe gray */
+  --border: 222, 211, 195;           /* Antique beige */
+  --hoverBackground: 237, 224, 206;  /* A touch deeper than bg */
+  --headerBackground: 237, 224, 206;    /* A muted, warm beige tone */
+  background: rgba(var(--background));
+}
+
+.dark {
+  --primary: 200, 120, 30;            /* Warm vintage orange */
+  --secondary: 150, 150, 150;         /* Gentle silver-gray */
+  --background: 200, 200, 200;        /* Light warm gray */
+  --containerBackground: 225, 225, 225; /* Light stone gray */
+  --headerBackground: 215, 215, 215;  /* Slightly darker for separation */
+  --primaryText: 235, 225, 210;       /* Deep warm gray for good contrast */
+  --secondaryText: 90, 90, 90;        /* Mid-gray for softer text */
+  --border: 180, 180, 180;            /* Subtle but visible gray border */
+  --hoverBackground: 240, 240, 240;   /* Gentle hover lift */
+  --headerBackground: 48, 44, 38;   /* A rich dark brown-gray */
+  background: rgba(var(--background));
+}
+
+
+

@@ -7,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     fetch(`https://openlibrary.org/search.json?q=the+lord+of+the+rings`)
       .then(res => res.json())
-      .then(data => setBooks(data.docs.slice(0, 10)));
+      .then(data => setBooks(data.docs.slice(0, 20)));
   }, []);
 
   return (
